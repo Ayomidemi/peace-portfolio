@@ -11,7 +11,7 @@ const Contact = () => {
     <div>
       
       <div className='b-title'>
-      <Title title={'Contact'} span={'Contact'} />
+      <Title title={'Contact Me'} span={'Contact Me'} />
         </div>
     <div className='contactpage'>
       <div className="map-sect">
