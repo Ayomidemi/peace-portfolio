@@ -1,0 +1,13 @@
+@import '../variables';
+
+.Homepage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.h-sub-text{
+    text-align: center;
+    font-size: 1.3rem;
+}

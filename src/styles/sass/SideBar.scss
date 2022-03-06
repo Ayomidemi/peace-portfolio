@@ -1,0 +1,59 @@
+@import '../variables';
+
+.App{
+    .sidebar{
+        width: 16%;
+        height: 100vh;
+        background-color: $smoky-black;
+        position: fixed;
+        z-index: 11;
+        color: $white;
+        border-right: 1px solid $eerie-black;
+        transform-origin: left;
+        @media screen and (max-width: 1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(-100%);
+            width: 30%;
+        }
+        @media screen and (max-width: 411px){
+            width: 50%;
+        }
+    }
+    .nav-toggle{
+        @media screen and (max-width: 1000px){
+            transition: all .4s ease-in-out;
+            transform: translateX(0);
+        }
+    }
+
+.nav-btn{
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top: 5%;
+    width: 4rem;
+    height: 4rem;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    .lines-1, .lines-2, .lines-3{
+        height: .4rem;
+        width: 100%;
+        background-color: $primary;
+        pointer-events: none;
+        display: none;
+        border-radius: 20px;
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        display: block;
+        .lines-1, .lines-2, .lines-3{
+            display: block;
+        }
+    }
+}
+}

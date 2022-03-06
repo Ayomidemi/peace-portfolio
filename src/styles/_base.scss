@@ -1,0 +1,86 @@
+@import './mixins';
+@import './variables';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+html {
+    font-size: 13px;
+
+    @include mobile {
+        font-size: 11px;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: $black;
+    color: $white;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $primary;
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-track{
+    background-color: $grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+link {
+    text-decoration: none;
+}
+a:hover {
+    color: $primary;
+}
+
+img {
+    max-width: 100%;
+}
+.hero-text{
+    color: $white;
+    text-align: center;
+    font-size: 3.6rem;
+}
+span{
+    color: $secondary;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    .icon-holder{
+        margin-right: 1rem;
+        .icon{
+           font-size: 2.8rem;
+           color: $light-grey;
+           transition: all .4s ease-in-out;
+        }
+        .ln:hover{
+            color: $secondary;
+        }
+        .gh:hover{
+            color: $black;
+        }
+        .tw:hover{
+            color: $secondary;
+        }
+    }
+}
