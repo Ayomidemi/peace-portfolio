@@ -18,7 +18,7 @@ const MenuItems = ({menuItem}) => {
                         <h5>
                             {item.title}
                         </h5>
-                        <p>Lorem Ipsum</p>
+                        
                     </div>
                 })
             }
