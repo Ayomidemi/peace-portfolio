@@ -20,24 +20,25 @@ const About = () => {
 
         <div className="skillsContainer">
                 <SkillSection skill={'Javascript'} progress={'60%'} width={'60%'} />
-                <SkillSection skill={'Typescript'} progress={'25%'} width={'25%'} />
                 <SkillSection skill={'React Js'} progress={'80%'} width={'80%'} />
                 <SkillSection skill={'Web Design'} progress={'70%'} width={'70%'} />
                 <SkillSection skill={'Bootstrap'} progress={'70%'} width={'70%'} />
                 <SkillSection skill={'Sass'} progress={'80%'} width={'80%'} />
-                <SkillSection skill={'GitHub'} progress={'60%'} width={'60%'} />    
+                <SkillSection skill={'GitHub'} progress={'60%'} width={'60%'} />   
+                <SkillSection skill={'Redux'} progress={'60%'} width={'60%'} />
+
             </div>
 
             <Title title={'Services'} span={'Services'} />
             <div className='services-container'>
               <ServicesSection image={design} title={'Web Design'} 
-                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}/>
+                text={'A vast web of possibilities to improve your site!'}/>
                 
                 <ServicesSection image={arti} title={'Artificial Intelligence'} 
-                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}/>
+                text={'Discover the power of AI'}/>
 
 <ServicesSection image={graphics} title={'Graphic Design'} 
-                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}/>
+                text={'Do More With Your Designs.'}/>
               </div>
 
 

@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 import avatar from '../img/pro2.png'
 
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div className="NavBar">
             <nav className="nav">
@@ -11,7 +11,7 @@ const NavBar = () => {
                     <img src={avatar} alt=""/>
                  </div>
 
-                <ul className="nav-items">
+                <ul className="nav-items" onClick={() => props.setNavToggle(false) }>
                     <li className="nav-item">
                     <NavLink to="/" style={{ textDecoration: 'none' }} >
                             Home

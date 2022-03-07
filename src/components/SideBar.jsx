@@ -9,16 +9,17 @@ const SideBar = () => {
 
   const navClick = () =>{
     setNavToggle(!navToggle)
+   
   }
 
   return (
     <div className='App'>
       <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
      
-        <NavBar />
+        {<NavBar toggle={navToggle} setNavToggle={setNavToggle} />}
       </div>
 
-      <div className="nav-btn" onClick={navClick}>
+      <div className="nav-btn" onClick={navClick} >
         <div className="lines-1"></div>
         <div className="lines-2"></div>
         <div className="lines-3"></div>
