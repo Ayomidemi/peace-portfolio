@@ -24,6 +24,9 @@
         }
         .about-text{
             padding: 1rem 0;
+            @media screen and (max-width: 411px){
+                font-size: 14px;
+            }
         }
     }
     @media screen and (max-width: 1400px){
